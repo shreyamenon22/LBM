@@ -1,2 +1,2 @@
-# Van_Karman_vortex_street using Lattice Boltzmann Method
+# Van_Karman_Vortex_Street using Lattice Boltzmann Method
 
