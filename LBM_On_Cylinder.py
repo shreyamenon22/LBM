@@ -20,7 +20,7 @@ Skip_first_N_Iteration=0
 
 D_v=9
 
-save_every = Ni // 75  #200 snapshots
+save_every = Ni // 200  #200 snapshots
 snapshots = []
 
 Lattice_velocities=jnp.array([ [ 0,  1,  0, -1,  0,  1, -1, -1,  1,],[ 0,  0,  1,  0, -1,  1,  1, -1, -1,]])
@@ -236,6 +236,19 @@ def main():
         v=np.stack([np.array(s["v"]) for s in snapshots]),
         vorticity=np.stack([np.array(s["vorticity"]) for s in snapshots]),
     )
+import numpy as np
+
+data = np.load("lbm_snapshots.npz")
+
+print("Keys:", list(data.keys()))
+print("u shape:", data["u"].shape)        # should be (200, 300, 50)
+print("v shape:", data["v"].shape)
+print("vorticity shape:", data["vorticity"].shape)
+print("u range:", data["u"].min(), "to", data["u"].max())
+print("v range:", data["v"].min(), "to", data["v"].max())
+print("iterations:", data["iterations"][:5], "...")  # first 5
+
+    
 
     
 if __name__=="__main__":
