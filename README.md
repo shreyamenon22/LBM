@@ -1,7 +1,8 @@
 # Von_Karman_Vortex_Street using Lattice Boltzmann Method
 
 ## What is this?
-This is demonstartating a simulation flow past a cylinder using Lattice Boltzmann Method, Where the whole area of flow is divided into grids and the flow in these grids are studied .A particle can go in 9 directions, The collision of the particles with other particles moving in different direction is studied in oreder to get a flow.
+This demonstrates a simulation of flow past a cylinder using the Lattice Boltzmann Method. The whole area of flow is divided into grids and the flow in these grids is studied. A particle can go in 9 directions, and the collision of particles with other particles moving in different directions is studied in order to get the overall flow.
+
 At Re=80, Von Karman Vortex Street is observed
 
 ## What is Von Karman Vortex Street?
